@@ -10,9 +10,7 @@ const ProductItem = (props) => {
 };
 
 const ProductsList = (props) => {
-  let products = props.products.slice(0, props.amount);
-
-  products = products.map(product => <ProductItem key={product.id} product={product}/>);
+  let products = props.products.map(product => <ProductItem key={product.id} product={product}/>);
 
   return (
     <ul className="products-list">
@@ -22,13 +20,13 @@ const ProductsList = (props) => {
 };
 
 function App() {
-  const amount = 3;
+  const productsData = data.slice(0, 3);
 
   return (
     <div className="App">
       <h1 className="page-title">Список товаров</h1>
 
-      <ProductsList amount={amount} products={data}/>
+      <ProductsList products={productsData}/>
     </div>
   );
 }

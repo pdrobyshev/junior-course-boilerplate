@@ -14,12 +14,9 @@ code {
     monospace;
 }
 
-body .page-title {
-  margin-bottom: 56px;
-}
-
 .page-title {
   margin: 0;
+  margin-bottom: 56px;
 
   text-align: center;
 }
